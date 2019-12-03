@@ -3,3 +3,18 @@ nav{
 	width:70px;
 	background-color:blue;
 }
+#parrafo1{
+	background-color:green;
+	color:blue;
+}
+p.parrafo2{
+	background-color:yellow;
+}
+.div.parrafo3{
+	background-color:blue;
+	height:128px;
+	color:red;
+}
+div div ul li a{
+	background-color: purple;
+}
