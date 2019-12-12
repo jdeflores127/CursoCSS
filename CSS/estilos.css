@@ -1,20 +1,32 @@
+html,body{
+	--color-letra:blue;
+}
+
 nav{
 	height:70px;
 	width:70px;
 	background-color:blue;
+	color:var(--color-letra);
 }
 #parrafo1{
-	background-color:green;
-	color:blue;
+	background-color: blue;
+	color: var(--color-letra);
+	color:var(--color-letra);
 }
 p.parrafo2{
 	background-color:yellow;
+	color:var(--color-letra);
 }
 .div.parrafo3{
-	background-color:blue;
+	--color-primario: green;
+	--color-secundario: orange;
+	background-color: var(--color-primario);
 	height:128px;
-	color:red;
+	color:var(--color-letra);
+	color:var(--color-letra);
+	
 }
 div div ul li a{
 	background-color: purple;
+	color:var(--color-letra);
 }
