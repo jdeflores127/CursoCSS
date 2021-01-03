@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="CSS/04-especificidad.css"/>
+</head>
+<body>
+	<h1>Herencia</h1>
+	<span>Se aplica con el valor <strong>inherit</strong> y hereda
+		la propiedad de su elemento mas cercano
+	</span>
+	<div>
+		<h2>Ejemplo:</h2>
+		<span>Se tiene un parrafo <code>&lt;p&gt;</code> y una etiqueta
+			<code>&lt;a&gt;</code> anidada, la etiqueta <code>&lt;a&gt;</code>
+			posee su propio estilo, si quisieramos cambiar el color de la
+			eqtiqueta padre, no funcionaría en la hija, se usa herencia para que
+			los 2 cambien de color a la vez
+		</span>
+		<br/>
+		<br/>
+		<span class="parrafo">este es un parrafo en linea con herencia </span>
+		<span id="parrafo" class="parrafo">parrafo con id </span>
+	</div>
+	<h1>Cascada</h1>
+	<span>Es elorden en que aplican los estilos CSS. los estilos que
+		vienen despues sobreescriben a los de arriba</span>
+		<div>En cascada: el segundo estilo sobreescribe al primero siempre que sean iguales los selectores</div>
+	<h1>especificidad</h1>
+	<span>Define una jerarquia de selectores sobre que estilos se
+		aplicaran cuando haya un conflicto de estilos. en caso de conflicto de estilos con selectores diferentes se usa la siguiente jerarqu&iacute;a</span>		
+	<ol>
+		<li>etiqueta: <span>0,0,0,1</span></li>
+		<li>clases y pseudoclases: <span>0,0,1,0</span></li>
+		<li>ID: <span>0,1,0,0</span></li>
+		<li>estilos de linea: <span>1,0,0,0</span></li>
+		<li>important: <span>mayor prioridad</span></li>
+	</ol>
+</body>
+</html>
