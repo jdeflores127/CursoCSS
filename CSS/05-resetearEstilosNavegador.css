@@ -1,0 +1,17 @@
+img{
+	max-width: 100%;
+}
+
+.cuadrado{
+	background: yellow;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	border: 10px solid black;
+}
+
+*,*:AFTER,*:BEFORE {
+	box-sizing: border-box;
+	border:10px;
+}
+
